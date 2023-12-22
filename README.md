@@ -21,5 +21,5 @@
 1. python manage.py runserver 8002
 2. On postman these APIs
     1. http://127.0.0.1:8002/api/products -- give request body as per method.
-    2. http://127.0.0.1:8002/api/products/<int:pk> -- give request body as per method.
+    2. http://127.0.0.1:8002/api/products/<<int:pk>> -- give request body as per method.
     3. http://127.0.0.1:8002/api/products/score --- to calculate the score as per the assignment
