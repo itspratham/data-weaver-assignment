@@ -3,13 +3,14 @@
 2. Create virtual environment and install requirement.txt using pip install -r requirements.txt.
 3. Open three command prompts.
 
-# 1st Command prompt:
+# 1st Command prompt (first_app):
+
 1. python manage.py runserver
 2. Open postman.
 3. Hit API: http://127.0.0.1:8000/api/my-data/ to populate the data to queue using form-data in postman by passing {file: "file_path"}
 4. Close the command prompt.
 
-# 2nd Command Prompt:
+# 2nd Command Prompt (second_app):
 1. python manage.py makemigrations new_app1
 2. python manage.py migrate
 3. python manage.py runserver
@@ -17,7 +18,7 @@
 5. python manage.py runserver
 6. Do not close this prompt.
 
-# 3rd Command Prompt
+# 3rd Command Prompt (third_app)
 1. python manage.py runserver 8002
 2. On postman these APIs
     1. http://127.0.0.1:8002/api/products -- give request body as per method.
